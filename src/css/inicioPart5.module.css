@@ -1,0 +1,265 @@
+/* .container {
+  position: relative;
+  width: 100%;
+  height: 47.5rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  background-image: url("../images/desk.jpg");
+  background-position: 50% 150%;
+  top: 4.85rem;
+  overflow-x: hidden;
+} */
+
+.parallaxFour {
+  width: 100%;
+  padding-bottom: 3.5rem;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 20% 80%;
+}
+
+.parallaxFour {
+  background-image: url("../images/background5.jpg");
+}
+
+.containerLeft,
+.containerRight {
+  box-sizing: border-box;
+  width: 46%;
+  display: inline-block;
+  height: 39rem;
+  background-color: transparent;
+  position: relative;
+  top: 6rem;
+}
+
+.containerLeft {
+  top: 2rem;
+  width: 30%;
+}
+
+.containerRight {
+  float: right;
+  position: relative;
+  padding: 0.5rem;
+
+  margin-right: 6rem;
+}
+
+.title {
+  position: relative;
+  font-size: 5rem;
+  line-height: 3rem;
+  text-align: right;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 2rem;
+  border-bottom: #ff733c 0.4rem solid;
+  margin: 0;
+  opacity: 0;
+  top: 18%;
+  animation: mainTitle 2s ease-out 1s forwards;
+}
+
+@keyframes mainTitle {
+  0% {
+    left: -50%;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.line {
+  position: relative;
+  height: 0.5rem;
+  background-color: #ff733c;
+  top: 22%;
+  animation: lineDisplay 2s ease-out 4s forwards;
+}
+
+@keyframes lineDisplay {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+/* 
+  .li {
+    position: relative;
+    margin: 0;
+    margin-top: 6rem;
+    opacity: 0;
+    font-size: 2.7rem;
+    animation: liDrop1 2s ease-out 4s forwards;
+    text-align: left;
+    background-color: tomato;
+  } */
+
+.subTitles {
+  padding: 1rem;
+  position: relative;
+  top: 8rem;
+  left: -1rem;
+}
+
+.containerte {
+  padding: 1rem;
+  position: relative;
+  top: 7rem;
+  left: 1em;
+  text-align: justify;
+  color: #fff;
+}
+
+.btnFirst {
+  padding: 1.4rem 4rem;
+  position: relative;
+  top: 6rem;
+  float: right;
+  background-color: #ff733c;
+  border: solid transparent 0.2rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s;
+  font-weight: 600;
+  font-size: 1.2rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem #000;
+  /* margin-right: 2rem; */
+}
+
+.btnFirst:hover {
+  background-color: transparent;
+  border: solid #ff733c 0.2rem;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0.1rem 0.2rem 0.2rem #000;
+}
+
+.li1,
+.li2,
+.li3,
+.li4 {
+  position: relative;
+  color: #333;
+  opacity: 0;
+  font-size: 2.7rem;
+  animation: liDrop1 2s ease-out 2s forwards;
+  text-align: right;
+  margin-right: -2rem;
+  /* padding-right: -4rem; */
+}
+
+.li2 {
+  animation: liDrop2 2s ease-out 3s forwards;
+}
+.li3 {
+  animation: liDrop2 2s ease-out 4s forwards;
+}
+.li4 {
+  animation: liDrop2 2s ease-out 5s forwards;
+}
+
+@keyframes liDrop1 {
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 12%;
+    opacity: 1;
+  }
+}
+
+@keyframes liDrop2 {
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    top: 2%;
+    opacity: 1;
+  }
+}
+
+.span {
+  font-size: 4rem;
+  position: relative;
+  vertical-align: bottom;
+}
+
+.cardContainer {
+  width: 70%;
+  background-color: #fff;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.7rem #333;
+  opacity: 0;
+  animation: dashCardContainer 2s ease-out 1s forwards;
+}
+
+@keyframes dashCardContainer {
+  0% {
+    left: 150%;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0.8;
+  }
+
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+.pCard {
+  color: #333;
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 0;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #3570b8;
+  border: solid #fff 0.2rem;
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 0.4rem;
+  transition: 1s;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #333;
+  transform: scale(0.95);
+  border: solid #3570b8 0.2rem;
+}

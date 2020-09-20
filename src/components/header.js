@@ -1,42 +1,35 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import styles from "../css/navbar.module.css"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+const Header = () => (
+  <nav className={styles.navbarContainer}>
+    {/* <Link href="/">
+      <div className={styles.menuIcon}>
+        <i aria-hidden="true" className={`fa fa-bars fa-2x ${styles.fa}`}></i>
+      </div>
+    </Link> */}
+    {/* <Link href="/">
+      <a className={styles.logo}>J3</a>
+    </Link> */}
+    {/* <ul className={`${styles.ul}`}>
+      <li className={styles.li}>
+        <Link className={styles.al} to="/">
+          Inicio
         </Link>
-      </h1>
-    </div>
-  </header>
+      </li>
+      <li className={styles.li}>
+        <Link className={styles.al} to="/">
+          Nosotros
+        </Link>
+      </li>
+      <li className={styles.li}>
+        <Link className={styles.al} to="/">
+          Contactanos
+        </Link>
+      </li>
+    </ul> */}
+  </nav>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
