@@ -1,0 +1,122 @@
+.container {
+  height: 34rem;
+  background-color: #fcfcfc;
+  box-shadow: -2px -27px 54px 0px #f8f6f7;
+  position: relative;
+}
+
+.containerLeft,
+.containerRight {
+  position: relative;
+  box-sizing: border-box;
+  width: 50%;
+  background-color: transparent;
+  float: left;
+  height: 34rem;
+}
+
+.containerLeft {
+  padding: 0 2rem;
+  padding-left: 7rem;
+}
+
+.containerTextBox {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.title {
+  position: relative;
+  color: #333;
+  font-size: 3rem;
+  padding-bottom: 1.2rem;
+  border-bottom: solid #035aa6 0.4rem;
+}
+
+.text {
+  text-align: justify;
+  position: relative;
+}
+
+.imagePosition {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80vh;
+}
+
+@media (max-width: 1680px) {
+  .imagePosition {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1540px) {
+  .imagePosition {
+    height: 62vh;
+  }
+}
+
+@media (max-width: 1376px) {
+  .imagePosition {
+    height: 55vh;
+  }
+}
+
+@media (max-width: 1214px) {
+  .imagePosition {
+    height: 48vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .containerRight {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .containerLeft {
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .containerTextBox {
+    width: 80%;
+    top: 0;
+    transform: translateY(0) translateX(-50%);
+    left: 50%;
+    margin-top: 2rem;
+  }
+
+  .imagePosition {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60vh;
+    top: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .imagePosition {
+    height: 48vh;
+  }
+}
+
+@media (max-width: 683px) {
+  .imagePosition {
+    height: 42vh;
+  }
+}
+
+@media (max-width: 583px) {
+  .imagePosition {
+    height: 38vh;
+  }
+}

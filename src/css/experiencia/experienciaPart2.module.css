@@ -1,0 +1,251 @@
+.container {
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  background-color: #fcfcfc;
+  padding-bottom: 1rem;
+  border: none;
+  box-shadow: -2px -27px 54px 0px rgba(173, 163, 142, 1);
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700,300); */
+
+.cardContainerTitle {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 4rem;
+}
+
+.line {
+  height: 0.4rem;
+  width: 5%;
+  background-color: #cb0b2b;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  margin-bottom: 2rem;
+}
+
+.cardContainer {
+  /* width: 80%; */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /* padding-right: 2rem;
+
+  padding-left: 7rem; */
+}
+
+.card {
+  margin: 0 15px;
+  display: inline-block;
+  left: 9%;
+  width: 25%;
+  text-align: center;
+  position: relative;
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  box-shadow: 0px 17px 46px -10px #777777;
+  height: 470px;
+  border-radius: 14px;
+  background-color: #000;
+  transition: 1s;
+}
+
+.cardHeader {
+  height: 120px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  overflow: hidden;
+  background-color: #333;
+  padding: 0.4rem;
+  padding-top: 0.2rem;
+}
+
+.cardIcon {
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background: #f1f0ed;
+  z-index: 10;
+  border-radius: 100px;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.28);
+  margin: auto;
+  border: 4px solid white;
+  top: 82px;
+}
+
+/* .card:nth-of-type(1) {
+  background-image: url("../../images/background13.jpg");
+}
+
+.card:nth-of-type(2) {
+  background-image: url("../../images/background13.jpg");
+}
+
+.card:nth-of-type(3) {
+  background-image: url("../../images/background13.jpg");
+}
+
+.card:nth-of-type(4) {
+  background-image: url("../../images/background13.jpg");
+}
+
+.card:nth-of-type(5) {
+  background-image: url("../../images/background13.jpg");
+} */
+
+.card:hover .cardButton {
+  transform: scale(1);
+}
+
+.card:hover .cardIconImage {
+  animation: spin 1s forwards;
+}
+
+.card:hover {
+  opacity: 1;
+  transition: 1s;
+}
+
+.cardTextContainer {
+  padding: 20px;
+}
+
+.price {
+  position: relative;
+  top: 2rem;
+  color: white;
+  font-weight: 800;
+  font-size: 70px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+}
+
+.text {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 1.2rem;
+  top: 0;
+  color: #ffffff99;
+  font-weight: 100;
+  font-size: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 16px;
+}
+
+.title {
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.64);
+  margin-top: 40px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+.cardButtonContainer {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+}
+
+.cardButton {
+  padding: 16px;
+  box-shadow: 0px 0px 40px 4px #f76583,
+    0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
+  width: 100%;
+  background: linear-gradient(-45deg, #cb0b2b 0%, #ff4262 100%);
+  border: none;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+  outline: none;
+  font-size: 20px;
+  border-radius: 6px;
+  transform: scale(0.94);
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.3s 0.1s;
+}
+
+.cardButton:hover {
+  box-shadow: 0px 0px 60px 8px #f76583,
+    0px 0px 0px 2px rgba(255, 255, 255, 0.19) inset;
+}
+
+.cardIconImage {
+  height: 26px;
+  width: 26px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  top: 1rem;
+  transition: all 0.2s;
+}
+
+@keyframes spin {
+  100% {
+    transform: translateX(-50%) rotate(720deg);
+  }
+}
+
+@keyframes intro {
+  0% {
+    transform: scale(0);
+  }
+
+  25% {
+    transform: scale(1.06);
+  }
+
+  50% {
+    transform: scale(0.965);
+  }
+
+  75% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1129px) {
+  .card {
+    margin: 0 15px;
+    display: inline-block;
+    left: 11%;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    opacity: 0.5;
+    box-shadow: 0px 17px 46px -10px #777777;
+    height: 470px;
+    border-radius: 14px;
+  }
+}
+
+@media (max-width: 952px) {
+  .card {
+    margin: 0;
+    display: inline-block;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 2rem;
+    opacity: 0.5;
+    box-shadow: 0px 17px 46px -10px #777777;
+    height: 470px;
+    border-radius: 14px;
+  }
+}

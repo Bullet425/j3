@@ -1,0 +1,5 @@
+export { default as Layout } from "./layout/layout"
+export { default as InicioComponent } from "./inicio"
+export { default as ServiciosComponent } from "./servicios"
+export { default as ContactanosComponent } from "./contactanos"
+export { default as ExperienciaComponent } from "./experiencia"

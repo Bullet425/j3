@@ -1,0 +1,12 @@
+.footer {
+  background-color: #000;
+  margin-bottom: 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.copy {
+  color: #fff;
+  margin-bottom: 0;
+  text-align: center;
+}
