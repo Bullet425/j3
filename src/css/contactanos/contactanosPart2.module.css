@@ -15,8 +15,6 @@
   width: 40%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #ffffff;
-  margin: 0;
   padding: 2.4rem;
   border: 5px solid #037782;
   animation: borderFade 3s ease-in-out 2s infinite alternate;
@@ -39,7 +37,6 @@
   font-size: 2rem;
   text-align: center;
   font-weight: 600;
-  padding-bottom: 1rem;
 }
 
 .inputLabel {
@@ -53,7 +50,7 @@
   width: 100%;
   border: 1px solid #d9d9d9;
   margin: 0 0 20px;
-  padding: 10px 15px;
+  padding: 10px 10px;
   box-sizing: border-box;
   font-weight: 400;
   transition: 0.3s ease;
@@ -115,5 +112,11 @@
 @media (max-width: 810px) {
   .form {
     width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .formTitle {
+    font-size: 1.6rem;
   }
 }

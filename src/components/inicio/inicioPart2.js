@@ -9,11 +9,11 @@ const InicioParte2 = () => {
   const { imagen2 } = imagen
 
   return (
-    <div className={styles.containerall}>
+    <div className={styles.container}>
       <div className={styles.containerLeft}>
         <div className={styles.textContainer}>
-          <h2 className={styles.hola}>Hola Mundo</h2>
-          <p className={styles.para}>
+          <h2 className={styles.title}>Hola Mundo</h2>
+          <p className={styles.text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
             elit ligula, vitae placerat sem pellentesque sodales. Nulla quis
             rhoncus massa. Quisque eleifend, est eget volutpat auctor, nibh
@@ -27,7 +27,7 @@ const InicioParte2 = () => {
         <BackgroundImage
           tag="section"
           fluid={imagen2.fluid}
-          className={styles.ima}
+          className={styles.image}
           fadeIn="soft"
         ></BackgroundImage>
       </div>

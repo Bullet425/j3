@@ -29,7 +29,7 @@ const ExperienciaPart2 = () => {
           </div>
           <div className={styles.cardTextContainer}>
             <div className={styles.title}>PERSONAL</div>
-            <div className={styles.price}>$19.99</div>
+            <div className={styles.price}>$9.99</div>
           </div>
           <div className={styles.cardButtonContainer}>
             <button className={styles.cardButton}>Ver mas</button>

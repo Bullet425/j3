@@ -15,7 +15,6 @@ const ServiciosPart3 = () => {
       tag="section"
       fadeIn="soft"
     >
-      {/* <div className={styles.container}> */}
       <div className={styles.containerImageTextBox}>
         <p className={styles.title}>Servicios</p>
         <div className={styles.line}></div>
@@ -26,7 +25,6 @@ const ServiciosPart3 = () => {
           adipiscing elit.
         </p>
       </div>
-      {/* </div> */}
     </BackgroundImage>
   )
 }

@@ -1,4 +1,4 @@
-.containerall {
+.container {
   height: 30rem;
 }
 
@@ -6,7 +6,6 @@
 .containerRight {
   box-sizing: border-box;
   width: 50%;
-  /* display: inline-block; */
   background-color: transparent;
   top: 50%;
   position: relative;
@@ -14,7 +13,16 @@
   float: left;
 }
 
-.hola {
+.textContainer {
+  width: 85%;
+  position: relative;
+  left: 60%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 2rem;
+}
+
+.title {
   color: #333;
   font-size: 3rem;
   padding-bottom: 1.2rem;
@@ -23,13 +31,7 @@
   border-bottom: solid #cb0b2b 0.4rem;
 }
 
-/* .containerLeft {
-  padding: 0 8rem;
-  padding-right: 16rem;
-  left: 3.5rem;
-} */
-
-.para {
+.text {
   text-align: justify;
 }
 
@@ -43,193 +45,8 @@
   box-shadow: 30px 50px 19px 17px rgba(0, 0, 0, 0.8);
 }
 
-/* .containerRight {
-  color: #000;
-  width: 30%;
-  padding: 0;
-  padding-right: 5rem;
-} */
-
-.textContainer {
-  width: 85%;
-  position: relative;
-  left: 60%;
-  transform: translateX(-50%);
-  margin: 0;
-  padding: 2rem;
-}
-
-.botones {
-  position: relative;
-  padding: 2rem;
-  width: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 2rem;
-}
-
-.boton1 {
-  background-color: thistle;
-}
-.boton2 {
-  background-color: thistle;
-}
-.boton3 {
-  background-color: thistle;
-}
-.boton4 {
-  background-color: thistle;
-}
-
-.transparent {
-  width: 70%;
-  padding: 0;
-  font-size: 0.8rem;
-  font-weight: 900;
-  color: #ff4655;
-  text-decoration: none;
-  /* box-shadow: 0 0 0 1px inset rgba(236, 232, 225, 0.3); */
-  position: relative;
-  margin: 10px 0;
-  border: none;
-}
-.transparent:hover > p {
-  color: #ece8e1;
-}
-
-.transparent > p {
-  background: #0f1923;
-  color: #ece8e1;
-}
-
-.transparent:after,
-.transparent:before {
-  content: "";
-  width: 1px;
-  position: absolute;
-  height: 8px;
-  background: #0f1923;
-  left: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-.transparent:before {
-  right: 0;
-  left: initial;
-}
-.transparent p {
-  margin: 0;
-  height: 54px;
-  line-height: 54px;
-  box-sizing: border-box;
-  z-index: 1;
-  left: 0;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-.bg {
-  left: -5%;
-  position: absolute;
-  background: #ff4655;
-  width: 0;
-  height: 100%;
-  z-index: 3;
-  transition: 0.3s ease-out all;
-  transform: skewX(-10deg);
-}
-.text {
-  z-index: 40;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.transparent:hover {
-  color: #ece8e1;
-}
-.transparent:hover .bg {
-  width: 110%;
-}
-
-/* .spinertext {
-  color: #fff;
-  z-index: 6;
-  position: relative;
-  top: -6.5rem;
-  left: 67%;
-  font-size: 1.4rem;
-  transform: translateX(-50%);
-} */
-
-.spinertext {
-  color: #fff;
-  z-index: 6;
-  position: relative;
-  top: -12.4rem;
-  left: 50%;
-  font-size: 1.4rem;
-  transform: translateX(-50%);
-  width: 230px;
-  height: 240px;
-}
-
-.spinner {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  border-radius: 50%;
-  display: inline-block;
-  background: #2ab57a;
-  margin: 50px;
-  top: 50%;
-}
-
-.spinner:after,
-.spinner:before {
-  content: "";
-  display: block;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-.spinner1 {
-  position: relative;
-  top: 6rem;
-}
-
-.spinner1:after {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border: 8px solid transparent;
-  border-top-color: #3daae5;
-  border-bottom-color: #3daae5;
-  animation: spinny 2s linear infinite;
-}
-
-@keyframes spinny {
-  0% {
-    transform: rotate(0deg) scale(1.2);
-  }
-  50% {
-    transform: rotate(72deg) scale(1.6);
-  }
-  100% {
-    transform: rotate(360deg) scale(1.2);
-  }
-}
-
 @media (max-width: 1200px) {
-  /* .textContainer {
-    left: 55%;
-  } */
-
   .ima {
-    /* left: 40%; */
     width: 26rem;
     height: 14rem;
   }
@@ -242,14 +59,16 @@
     top: 0;
   }
 
-  .para {
+  .text {
     margin-bottom: 0;
+  }
+
+  .title {
+    text-align: center;
   }
 
   .ima {
     left: 50%;
-    /* width: 40%;
-    height: 40%; */
     transition: 1s;
     box-shadow: 25px 25px 19px 10px rgba(0, 0, 0, 0.8);
     position: relative;
@@ -261,5 +80,12 @@
     width: 100%;
     top: 0;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 430px) {
+  .ima {
+    width: 18rem;
+    height: 10rem;
   }
 }

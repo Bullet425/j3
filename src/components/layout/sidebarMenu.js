@@ -68,22 +68,22 @@ const SidebarMenu = () => {
         {menu ? (
           <ul className={styles.ul2}>
             <li className={styles.li2}>
-              <Link to="/" className={styles.ho}>
+              <Link to="/" className={styles.link}>
                 Inicio
               </Link>
             </li>
             <li className={styles.li2}>
-              <Link to="/servicios" className={styles.ho}>
+              <Link to="/servicios" className={styles.link}>
                 Servicios
               </Link>
             </li>
             <li className={styles.li2}>
-              <Link to="/experiencia" className={styles.ho}>
+              <Link to="/experiencia" className={styles.link}>
                 Experiencia
               </Link>
             </li>
             <li className={styles.li2}>
-              <Link to="/contactanos" className={styles.ho}>
+              <Link to="/contactanos" className={styles.link}>
                 Contactanos
               </Link>
             </li>

@@ -26,7 +26,6 @@ const ServiciosPart2 = () => {
         </div>
       </div>
       <div className={styles.containerRight}>
-        {/* <img className={styles.imagePosition} src={image} /> */}
         <BackgroundImage
           fluid={imagen2.fluid}
           tag="section"

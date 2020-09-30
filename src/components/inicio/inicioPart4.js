@@ -8,11 +8,11 @@ const InicioPart4 = () => {
 
   const { imagen4 } = imagen
   return (
-    <div className={styles.containerall}>
+    <div className={styles.container}>
       <div className={styles.containerLeft}>
         <div className={styles.textContainer}>
-          <h2 className={styles.hola}>Hola Mundo</h2>
-          <p className={styles.para}>
+          <h2 className={styles.title}>Hola Mundo</h2>
+          <p className={styles.text}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere
             elit ligula, vitae placerat sem pellentesque sodales. Nulla quis
             rhoncus massa. Quisque eleifend, est eget volutpat auctor, nibh

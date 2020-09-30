@@ -1,24 +1,7 @@
 .container {
   width: 100%;
-  padding-bottom: 3.5rem;
   overflow: hidden;
-  position: relative;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0% 5%;
-  height: 43rem;
-}
-
-@keyframes lineAppear {
-  90% {
-    opacity: 0.8;
-  }
-
-  100% {
-    width: 80%;
-    opacity: 1;
-  }
+  height: 42rem;
 }
 
 .containerImageTextBox {
@@ -26,7 +9,7 @@
   width: 60%;
   position: relative;
   top: 12rem;
-  left: 45%;
+  left: 40%;
   transform: translateX(-50%);
 }
 
@@ -67,6 +50,17 @@
   opacity: 0;
 }
 
+@keyframes lineAppear {
+  90% {
+    opacity: 0.8;
+  }
+
+  100% {
+    width: 80%;
+    opacity: 1;
+  }
+}
+
 .text {
   padding-top: 1rem;
   position: relative;
@@ -77,9 +71,7 @@
 
 @media (max-width: 1380px) {
   .containerImageTextBox {
-    /* top: 50%; */
     transition: 1s;
-    width: 60%;
     left: 40%;
   }
 
@@ -90,20 +82,18 @@
 }
 
 @media (max-width: 992px) {
+  .container {
+    padding-bottom: 0;
+  }
+
   .containerImageTextBox {
-    box-sizing: border-box;
     width: 80%;
-    background-color: rgb(255, 255, 255, 0.6);
-    position: relative;
-    top: 40%;
+    background-color: rgb(255, 255, 255, 0.9);
+    top: 50%;
     padding: 2rem;
     height: auto;
-    /* margin-top: 2rem; */
-    margin-bottom: 4.5rem;
-    transition: 1s;
     left: 50%;
-    margin-right: 0;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
   }
 
   .title {
@@ -132,18 +122,10 @@
   }
 
   .text {
-    /* left: 0; */
     top: 0;
     transition: 1s;
     margin-bottom: 0;
     width: 100%;
-  }
-
-  .button {
-    left: 0;
-    width: 100%;
-    transition: 1s;
-    top: 0;
   }
 }
 

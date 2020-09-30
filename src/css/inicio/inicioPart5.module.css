@@ -2,24 +2,18 @@
   width: 100%;
   padding-bottom: 3.5rem;
   overflow: hidden;
-  position: relative;
-  background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 100% 10%;
-  /* background-image: url("../../images/background5.jpg"); */
+  height: 39rem;
 }
 
 .textContainer {
   box-sizing: border-box;
   width: 50%;
-  height: 39rem;
   background-color: transparent;
   position: relative;
-  top: 6rem;
   float: right;
   padding: 0.5rem;
   margin-right: 4rem;
+  top: 12rem;
 }
 
 .title {
@@ -33,7 +27,6 @@
   padding-bottom: 1.1rem;
   margin: 0;
   opacity: 0;
-  top: 18%;
   animation: mainTitle 2s ease-out 1s forwards;
 }
 
@@ -64,7 +57,6 @@
   width: 0%;
   opacity: 0;
   left: 0;
-  top: 7rem;
 }
 
 @keyframes lineAppear {
@@ -81,15 +73,14 @@
 .text {
   padding: 1rem;
   position: relative;
-  top: 7rem;
   left: 1em;
   text-align: justify;
   color: #fff;
+  margin-bottom: 0;
 }
 
 .button {
   position: relative;
-  top: 6rem;
   transform: translateX(0%);
   float: right;
   background-color: #037782;
@@ -108,15 +99,11 @@
 
 .button:hover {
   background-color: rgb(3, 119, 130, 0.4);
-  border: solid #fff 0.2rem;
-  color: #fff;
-  font-weight: 600;
   box-shadow: 0.1rem 0.2rem 0.2rem #000;
 }
 
 @media (max-width: 1200px) {
   .textContainer {
-    /* top: 11rem; */
     transition: 1s;
   }
 
@@ -128,16 +115,13 @@
 
 @media (max-width: 992px) {
   .textContainer {
-    box-sizing: border-box;
     width: 80%;
     background-color: rgb(255, 255, 255, 0.6);
-    position: relative;
     top: 3.5rem;
     padding: 2rem;
     height: auto;
     margin-top: 2rem;
     margin-bottom: 4.5rem;
-    transition: 1s;
     left: 50%;
     margin-right: 0;
     transform: translateX(-75%);
@@ -145,21 +129,17 @@
 
   .title {
     text-align: center;
-    line-height: 1.2;
-    padding-bottom: 0.6rem;
-    top: 0;
+    padding-bottom: 0.8rem;
     font-size: 3rem;
     color: #000;
   }
 
   .line {
-    top: 0;
     transition: 1s;
   }
 
   .text {
     left: 0;
-    top: 0;
     transition: 1s;
     margin-bottom: 0;
     color: #000;
@@ -169,6 +149,17 @@
     left: 0;
     width: 100%;
     transition: 1s;
-    top: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .title {
+    font-size: 1.8rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .button {
+    padding: 1rem 0.2rem;
+    font-size: 0.8rem;
   }
 }
